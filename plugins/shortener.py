@@ -67,7 +67,7 @@ async def bulk_shortener(message):
 
 async def get_shortlink(link):
     url = 'https://droplink.co/api'
-    params = {'api': "1aab74171e9891abd0ba799e3fd568c9598a79e1", 'url': link}
+    params = {'api': "90898f6c44bad5bac69c175cb4a4ccd794728d37", 'url': link}
 
     async with aiohttp.ClientSession() as session:
         async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
@@ -136,7 +136,7 @@ async def mdisk_bulk_shortener(message):
 async def get_mdisk(link):
     url = 'https://diskuploader.mypowerdisk.com/v1/tp/cp'
     param = {'token':
-                 '6LZq851sXoPHuwqgiKQq', 'link': link
+                 'tWCQkCS7qiRts5cW6AoS', 'link': link
              }
     res = requests.post(url, json=param)
     shareLink = res.json()
