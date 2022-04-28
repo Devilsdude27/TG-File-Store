@@ -7,7 +7,7 @@ DB_CHANNEL_ID = os.environ.get("DB_CHANNEL_ID")
 IS_PRIVATE = os.environ.get("IS_PRIVATE",False) # any input is ok But True preferable
 OWNER_ID = int(os.environ.get("OWNER_ID"))
 UPDATE_CHANNEL = os.environ.get('UPDATE_CHANNEL', '')
-API_KEY = os.environ.get('API_KEY', '1aab74171e9891abd0ba799e3fd568c9598a79e1')
+API_KEY = os.environ.get('API_KEY', '90898f6c44bad5bac69c175cb4a4ccd794728d37)
 SITE = os.environ.get('SITE', 'droplink.co')
 AUTH_USERS = list(int(i) for i in os.environ.get("AUTH_USERS", "").split(" ")) if os.environ.get("AUTH_USERS") else []
 if OWNER_ID not in AUTH_USERS:
